@@ -3,9 +3,9 @@ var app = angular.module("myModule", ["ngRoute"]);
 
 app.config(function($routeProvider) {
 
-  $routeProvider.when("/meme", {
+  $routeProvider.when("/sentiment", {
       templateUrl: "views/memeview.html",
-      controller: "memeController"
+      controller: "sentimentController"
   });
 
   $routeProvider.when("/palindrome", {
