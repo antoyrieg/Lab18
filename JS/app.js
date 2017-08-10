@@ -3,9 +3,9 @@ var app = angular.module("myModule", ["ngRoute"]);
 
 app.config(function($routeProvider) {
 
-  $routeProvider.when("/meme", {
-      templateUrl: "views/memeview.html",
-      controller: "memeController"
+  $routeProvider.when("/sentiment", {
+      templateUrl: "views/sentimentview.html",
+      controller: "sentimentController"
   });
 
   $routeProvider.when("/palindrome", {
@@ -16,11 +16,6 @@ app.config(function($routeProvider) {
     $routeProvider.otherwise({
           redirectTo: "/palindromeview.html"
       });
-
-
-
-
-
 });
 
 })();
