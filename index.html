@@ -4,29 +4,26 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Palindrome, Meme, or Both?</title>
+        <title>Palindrome, Positive Sentiment, or Both?</title>
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
-        <!-- Our CSS -->
         <link rel="stylesheet" href="style.css">
     </head>
-    <body ng-app="demoApp">
+    <body ng-app="myModule">
         <nav>
-            <a href="#!/input">Input</a>
-            <a href="#!/display">Display</a>
+            <a href="#!/sentiment">See How Positive You Can Be!</a>
+            <a href="#!/palindrome">Check For A Palindrome!</a>
         </nav>
+
+
+
         <ng-view></ng-view>
 
 
         <!-- Invlude Angular and UI.Bootstrap -->
         <script src="lib/angular.min.js" charset="utf-8"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular-route.min.js"></script>
-        <script src="lib/ui-bootstrap-tpls-2.5.0.min.js" charset="utf-8"></script>
-        <!-- Our Scripts -->
         <script src="js/app.js" charset="utf-8"></script>
-        <script src="js/memecontroller.js"></script>
+        <script src="js/sentimentController.js"></script>
         <script src="js/palindromecontroller.js"></script>
         <script src="js/service.js"></script>
         <script src="js/serviceapi.js"></script>
