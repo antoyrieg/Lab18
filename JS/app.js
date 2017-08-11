@@ -27,7 +27,7 @@ app.directive("header", function() {
 
 app.directive("footer", function() {
   return {
-    template: 'Copyright Grand Circus Detroit', // path to the file with HTML
+    template: '&copy;Copyright Grand Circus Detroit', // path to the file with HTML
   }
 })
 
