@@ -4,12 +4,12 @@ var app = angular.module("myModule", ["ngRoute"]);
 app.config(function($routeProvider) {
 
   $routeProvider.when("/palindrome", {
-        templateUrl: "views/palindromeview.html",
+        templateUrl: "Views/palindromeview.html",
         controller: "palindromeController"
     });
 
   $routeProvider.when("/sentiment", {
-      templateUrl: "views/sentiment.html",
+      templateUrl: "Views/sentimentview.html",
      controller: "sentimentController"
   });
 
