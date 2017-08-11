@@ -1,9 +1,3 @@
-<<<<<<< Updated upstream
-var app = angular.module ("myModule");
-app.controller("sentimentController", function($scope, pService) {
-
-});
-=======
 (function() {
 var app = angular.module("myModule");
 
@@ -17,4 +11,3 @@ app.controller("sentimentController", function($scope, sentimentService) {
   });
 });
 //var promise = $http.get('https://community-sentiment.p.mashape.com/text');
->>>>>>> Stashed changes
