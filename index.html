@@ -12,19 +12,24 @@
         <nav>
             <a href="#!/sentiment">See How Positive You Can Be!</a>
             <a href="#!/palindrome">Check For A Palindrome!</a>
-        </nav>
+        </nav></br>
 
+    <!--Name: <input ng-model="input" ng-change="onChange()">
+    <h1>{{ input }}</h1>
+   <button type="button" ng-click="question(input)"> Click Me </button></br>
 
+    {{ response }}-->
+      <main>
 
-        <ng-view></ng-view>
+        <div ng-view= "">wait for it...</div>
 
-
+      </main>
         <!-- Invlude Angular and UI.Bootstrap -->
         <script src="lib/angular.min.js" charset="utf-8"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular-route.min.js"></script>
         <script src="js/app.js" charset="utf-8"></script>
+        <script src="js/palindromeController.js"></script>
         <script src="js/sentimentController.js"></script>
-        <script src="js/palindromecontroller.js"></script>
         <script src="js/service.js"></script>
         <script src="js/serviceapi.js"></script>
     </body>
