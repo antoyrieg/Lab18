@@ -1,15 +1,15 @@
 (function() {
-var app = angular.module("myModule", ["ngRoute"]);
+var app = angular.module("myModule", ["ngRoute", "ngAnimate"] );
 
 app.config(function($routeProvider) {
 
   $routeProvider.when("/palindrome", {
-        templateUrl: "views/palindromeview.html",
+        templateUrl: "Views/palindromeview.html",
         controller: "palindromeController"
     });
 
   $routeProvider.when("/sentiment", {
-      templateUrl: "views/sentiment.html",
+      templateUrl: "Views/sentimentview.html",
      controller: "sentimentController"
   });
 
@@ -18,5 +18,18 @@ app.config(function($routeProvider) {
           redirectTo: "/palindrome"
       });
 });
+
+app.directive("header", function() {
+  return {
+    template: "What's your favorite word?", // path to the file with HTML
+  }
+})
+
+app.directive("footer", function() {
+  return {
+    template: 'Copyright Grand Circus Detroit', // path to the file with HTML
+  }
+})
+
 
 })();

@@ -63,3 +63,103 @@ fieldset {
 	transform: scale(1.1);
 }	
 		
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+#sentimentbtn {
+  width: 150px;
+  height: 50px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
+  font-size: 0.9em;
+  letter-spacing: 1.2px;
+  margin: auto;
+  color: white;
+  text-shadow: 2px 2px 4px #D9A7F6;
+  font-family: 'Roboto Mono', 'monospace';
+}
+
+#userwords {
+  width: 250px;
+  height: 40px;
+  margin: auto;
+  letter-spacing: 1.2px;
+  font-size: 0.9em;
+  color: #5A1C7E;
+  background-color: #D9A7F6;
+  text-shadow: 2px 2px 4px #D9A7F6;
+  border-radius: 6px;
+  text-align: center;
+  cursor: left;
+  border: none;
+}
+
+main {
+  background: linear-gradient(90deg, rgba 19, 150, 190, 2) 0% rgba(179, 29, 140, 2) 100%%;
+  margin: auto;
+}
+header{
+  background-color: pink;
+  width:100%;
+  margin: 10px 0 20px 0;
+  padding: 10px;
+}
+
+footer{
+  background-color: pink;
+  width: 100%;
+  margin: 500px 0;
+  padding:10px;
+}
+/*pages*/
+.page-palindrome{
+  background-color: yellow;
+}
+.page-sentiment{
+  background-color: blue;
+}
+/*animations*/
+.page.ng-leave 	{ z-index:9999; }
+.page.ng-enter 	{ z-index:8888; }
+
+/*page specific enter/leave animations*/
+
+.page-palindrome.ng-leave {
+  transform-origin: 0% 0%;
+  animation: rotateFall 1s both ease-in;
+}
+.page-palindrome.ng-enter {
+  animation:scaleUp 0.5s both ease-in;
+}
+
+.page-sentiment.ng-leave{
+  animation:slideOutLeft 0.5s both ease-in;
+}
+
+.page-sentiment.ng-enter{
+  animation:slideInRight 0.5s both ease-in;
+}
+
+/* scale up */
+@keyframes scaleUp {
+	from 		{ opacity: 0.3; transform: scale(0.8); }
+
+  }
+
+  /*rotatate and fall*/
+@keyframes rotateFall {
+  	0% { transform: rotateZ(0deg); }
+  	20% { transform: rotateZ(10deg); animation-timing-function: ease-out; }
+  	40% { transform: rotateZ(17deg); }
+  	60% { transform: rotateZ(16deg); }
+  	100% { transform: translateY(100%) rotateZ(17deg); }
+  }
+  /*slide out left*/
+@keyframes slideOutLeft {
+  	to 		{ transform: translateX(-100%); }
+  }
+
+/* slide in from the right */
+@keyframes slideInRight {
+	from 	{ transform:translateX(100%); }
+	to 		{ transform: translateX(0); }
+}

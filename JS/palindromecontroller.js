@@ -4,4 +4,5 @@ app.controller("palindromeController", function($scope, pService) {
 		$scope.response = pService.isItPalindrome(word);
 		console.log($scope.response);
 	};
+	$scope.pageClass = 'page-palindrome';
 });

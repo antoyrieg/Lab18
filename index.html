@@ -8,26 +8,26 @@
 		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Sedgwick+Ave|Sedgwick+Ave+Display" rel="stylesheet">	
 		<link rel="stylesheet" href="style.css">
     </head>
-    <body ng-app="myModule">
-    
-            <ng-view></ng-view>
+    <body ng-app="myModule"> 
+    <header></header>   
 
     <nav>
     	 <a href="#!/sentiment"> <button class="nav" > See How Positive You Can Be! </button> </a> 
            <a href="#!/palindrome"> <button class="nav">Check For A Palindrome!
            </button> </a> 
    </nav>     
+   
 
+			<div class="page {{ pageClass }}" ng-view> </div>
 
-
-
-
+<footer> </footer>
         <!-- Invlude Angular and UI.Bootstrap -->
         <script src="lib/angular.min.js" charset="utf-8"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular-route.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.js"></script>
         <script src="js/app.js" charset="utf-8"></script>
-        <script src="js/sentimentController.js"></script>
-        <script src="js/palindromecontroller.js"></script>
+        <script src="js/palindromeController.js"></script>
+        <script src="js/sentimentcontroller.js"></script>
         <script src="js/service.js"></script>
         <script src="js/serviceapi.js"></script>
     </body>
