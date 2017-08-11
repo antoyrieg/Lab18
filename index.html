@@ -5,18 +5,21 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Palindrome, Positive Sentiment, or Both?</title>
-
-        <link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Sedgwick+Ave|Sedgwick+Ave+Display" rel="stylesheet">	
+		<link rel="stylesheet" href="style.css">
     </head>
     <body ng-app="myModule">
-        <nav>
-            <a href="#!/sentiment">See How Positive You Can Be!</a>
-            <a href="#!/palindrome">Check For A Palindrome!</a>
-        </nav>
+    
+            <ng-view></ng-view>
+
+    <nav>
+    	 <a href="#!/sentiment"> <button class="nav" > See How Positive You Can Be! </button> </a> 
+           <a href="#!/palindrome"> <button class="nav">Check For A Palindrome!
+           </button> </a> 
+   </nav>     
 
 
 
-        <ng-view></ng-view>
 
 
         <!-- Invlude Angular and UI.Bootstrap -->

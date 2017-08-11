@@ -1,11 +1,14 @@
-Name: <input ng-model="input" ng-change="onChange()">
-<h1>{{ input }}</h1>
-<button type="button" ng-click="question(input)"> Click Me </button>
+<div class="input">
+<fieldset>
+<legend><b>Type Word Here</b></legend>
+<input ng-model="input" ng-change="onChange()">
+<h3>{{ input }}</h3>
+<button class="submit" type="button" ng-click="question(input)"> Click Me </button>
 
-{{ response }}
+<p> {{ response }} </p>
 
-
-
+</fieldset>
+</div>
 <!--<div class = "palindromeinput"
 <input type ="ng-submit" value="" placeholder = "Input Your Word Here">
 
